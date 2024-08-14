@@ -1,0 +1,5 @@
+# Virtual Environment
+/backend/venv
+
+# .pyc files (Python)
+/backend/__pycache__
