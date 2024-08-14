@@ -1,5 +1,9 @@
 # Virtual Environment
-/backend/venv
+/backend/venv/
 
-# .pyc files (Python)
-/backend/__pycache__
+# Python Bytecode Files
+/backend/__pycache__/
+/backend/tests/__pycache__/
+
+# Pytest Cache
+/backend/.pytest_cache/
