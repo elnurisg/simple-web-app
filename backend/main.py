@@ -1,9 +1,21 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from backend.calculate import add_numbers, subtract_numbers, multiply_numbers, divide_numbers
-from backend.utils import next_prime
+from calculate import add_numbers, subtract_numbers, multiply_numbers, divide_numbers
+from utils import next_prime
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
+
+origins = ["*"]
+
+# CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # request body 
 class CalculatePayload(BaseModel):
