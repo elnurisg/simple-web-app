@@ -21,7 +21,7 @@ def next_prime(n: int) -> int:
 
     # if it is less or equal than 2, the next prime number will be 2 
     # bcz prime numbers can not be negative and >=2
-    if n <= 2: 
+    if n < 2: 
         return 2
     
     prime = n + 1
