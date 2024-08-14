@@ -1,0 +1,7 @@
+# Ignore the virtual environment
+/backend/venv/
+
+# Ignore Python bytecode files and cache directories
+/backend/__pycache__/
+/backend/tests/__pycache__/
+/backend/.pytest_cache/
