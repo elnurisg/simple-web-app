@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from .calculate import add_numbers, subtract_numbers, multiply_numbers, divide_numbers
-from .utils import next_prime
+from backend.calculate import add_numbers, subtract_numbers, multiply_numbers, divide_numbers
+from backend.utils import next_prime
 
 app = FastAPI()
 
