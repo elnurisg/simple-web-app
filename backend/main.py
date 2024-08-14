@@ -6,8 +6,8 @@ app = FastAPI()
 
 # request body 
 class CalculatePayload(BaseModel):
-    a: float
-    b: float
+    a: int
+    b: int
     operation: str
 
 # post endpoint
