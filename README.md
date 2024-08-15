@@ -93,3 +93,7 @@ docker-compose down
 - **Backend Development**: After modifying the files inside the `backend/` directory, you can run the backend locally using `uvicorn main:app --reload` after setting the `PYTHONPATH`.
 - **Testing**: Ensure all tests pass by running the `pytest` and add new tests to cover new features or changes.
 
+### Screenshot
+Here is a screenshot of the website:
+
+![Website Screenshot](Screenshot 2024-08-15 at 21.07.28.png)
