@@ -91,5 +91,5 @@ docker-compose down
 
 - **Frontend Development**: After modifying the files inside the `frontend/` directory, you can use a local server (e.g., `python3 -m http.server <port_number>`) to preview changes if needed.
 - **Backend Development**: After modifying the files inside the `backend/` directory, you can run the backend locally using `uvicorn main:app --reload` after setting the `PYTHONPATH`.
-- **Testing**: Ensure all tests pass by running the pytest and add new tests to cover new features or changes.
+- **Testing**: Ensure all tests pass by running the `pytest` and add new tests to cover new features or changes.
 
