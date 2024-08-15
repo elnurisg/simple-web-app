@@ -1,44 +1,140 @@
+/* Basic reset for body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background: linear-gradient(to right, #e3f2fd, #ffffff);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.form-group {
-    margin-bottom: 15px;
+/* Header styling */
+header {
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
+h1 {
+    color: #333;
 }
 
-input[type="number"],
-select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-}
-
-button {
-    padding: 10px 15px;
-    background-color: #007BFF;
+/* Info Button styling */
+#infoButton {
+    background-color: #6c757d;
     color: white;
     border: none;
     border-radius: 5px;
+    padding: 4px 8px;
+    font-size: 10px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 10%;
+}
+
+#infoButton:hover {
+    background-color: #5a6268;
+}
+
+/* Form group spacing */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Input and select field styling */
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
     background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Result styling */
 #result {
-    margin-top: 20px;
+    margin-top: 25px;
+    font-size: 18px;
     font-weight: bold;
+    text-align: center;
+    color: #007BFF;
+}
+
+/* Description styling */
+.description {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-left: 4px solid #007BFF;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    display: none;
+}
+
+.description.visible {
+    display: block;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    body {
+        margin: 20px auto;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    input[type="number"],
+    select {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #result {
+        font-size: 16px;
+    }
 }
