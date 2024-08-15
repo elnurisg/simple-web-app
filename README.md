@@ -96,4 +96,4 @@ docker-compose down
 ### Screenshot
 Here is a screenshot of the website:
 
-![Website Screenshot](Screenshot 2024-08-15 at 21.07.28.png)
+![Website Screenshot](screenshot.png)
