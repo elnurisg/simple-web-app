@@ -7,3 +7,6 @@
 
 # Pytest Cache
 /backend/.pytest_cache/
+
+/.pytest_cache
+backend/src/__pycache__/
