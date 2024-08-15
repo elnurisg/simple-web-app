@@ -3,38 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Calculator</title>
+    <title>Cents Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>Simple Calculator</h1>
-
-    <div class="form-group">
-        <label for="number1">Number 1:</label>
-        <input type="number" id="number1" placeholder="Enter the first number">
+    <div class="container">
+        <button id="infoButton" title="Click for more information">Info</button>
+        <header>
+            <h1>Cents Calculator</h1>
+        </header>
+        
+        <div class="form-group">
+            <label for="number1">Number 1:</label>
+            <input type="number" id="number1" placeholder="Enter the first number">
+        </div>
+        
+        <div class="form-group">
+            <label for="number2">Number 2:</label>
+            <input type="number" id="number2" placeholder="Enter the second number">
+        </div>
+        
+        <div class="form-group">
+            <label for="operation">Operation:</label>
+            <select id="operation">
+                <option value="add">Add</option>
+                <option value="subtract">Subtract</option>
+                <option value="multiply">Multiply</option>
+                <option value="divide">Divide</option>
+            </select>
+        </div>
+        
+        <button id="calculateButton">Calculate</button>
+        
+        <div id="result"></div>
     </div>
 
-    <div class="form-group">
-        <label for="number2">Number 2:</label>
-        <input type="number" id="number2" placeholder="Enter the second number">
+    <div id="description" class="description hidden">
+        <p>
+            This calculator performs basic arithmetic operations (addition, subtraction, multiplication, and division) on two input numbers.
+            After the initial calculation, it repeats the operation using the result and the first prime number greater than the larger of the two input numbers.
+        </p>
     </div>
-
-    <div class="form-group">
-        <label for="operation">Operation:</label>
-        <select id="operation">
-            <option value="add">Add</option>
-            <option value="subtract">Subtract</option>
-            <option value="multiply">Multiply</option>
-            <option value="divide">Divide</option>
-        </select>
-    </div>
-
-    <button id="calculateButton">Calculate</button>
-
-    <div id="result"></div>
 
     <script src="script.js"></script>
-
 </body>
 </html>

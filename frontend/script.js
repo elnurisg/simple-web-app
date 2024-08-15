@@ -25,3 +25,8 @@ document.getElementById('calculateButton').addEventListener('click', function() 
         document.getElementById('result').innerText = 'An error occurred.';
     });
 });
+
+document.getElementById('infoButton').addEventListener('click', function() {
+    const description = document.getElementById('description');
+    description.classList.toggle('visible');
+});
